@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.a{
+    border: 2px solid dodgerblue;
+    height: 80px;
+    border-radius: 20px;
+    color: black;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 20px;
+    padding-top: 24px;
+    transition: 0.2s;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    background-color: rgb(255,255,255);
+}
+
+.a:hover{
+    background-color: rgb(30, 144, 255);
+    box-shadow: 5px, 5px, 5px, black;
+}
+
+p{
+    text-align: center;
+    display: block;
+    margin-top: -200px;
+    animation-name: promise;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animation{
+    0%{
+        margin-top: -300px;
+    }
+    100%{
+        margin-top: 20px;
+    }
+}
+
+@keyframes promise{
+    0%{
+        margin-top: -300px;
+        opacity: 0;
+        
+    }
+    50%{
+        opacity: 0.5s;
+    }
+    80%{
+        margin-top: -100px;
+        opacity: 1;
+    }
+    100%{
+        margin-top: -200px;
+    }
+}
+
+.b{
+    text-align: center;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    bottom: 20px;
+    font-size: 52px;
+    right: 20px;
+    border-radius: 100%;
+    background-color: dodgerblue;
+    text-decoration: none;
+    color: black;
+    opacity: 0.2;
+    transition: 0.5s;
+    animation-name: top;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+
+.b:hover{
+    opacity: 1;
+}
+
+@keyframes top{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0.2;
+    }
+    70%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.2;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
